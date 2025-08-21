@@ -1,15 +1,11 @@
-# neutralinojs-minimal
+# Autor Codigo:
 
-The default template for a Neutralinojs app. It's possible to use your favorite frontend framework by using [these steps](https://neutralino.js.org/docs/getting-started/using-frontend-libraries).
+Jesus Gonzalez Leal IDGS08
 
-## Contributors
+medical-tcp-app
 
-[![Contributors](https://contrib.rocks/image?repo=neutralinojs/neutralinojs-minimal)](https://github.com/neutralinojs/neutralinojs-minimal/graphs/contributors)
 
-## License
+Aplicacion hecha para mi proyecto de estadia con el protocolo Socket TCP/IP
 
-[MIT](LICENSE)
 
-## Icon credits
 
-- `trayIcon.png` - Made by [Freepik](https://www.freepik.com) and downloaded from [Flaticon](https://www.flaticon.com)
