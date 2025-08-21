@@ -32,22 +32,63 @@
 
         <div class="card-body row g-9 align-items-center">
 
-          <div class="col-md-1">
+          <div class="col-md-2">
             <label class="form-label">Amplitud:</label>
             <input type="number" class="form-control" id="inputamplitud" value="10" min="1">
             <small class="text-danger" id="errorAmplitud" style="display: none;"></small>
           </div>
 
-          <div class="col-md-3 d-grid">
-              <button class="btn btn-success" onclick="iniciarMonitoreo()">Iniciar/Actualizar</button>
-          </div>
-          
+          <div class="col-md-2">
+            <label class="form-label">Hz:</label>
+            <input type="number" class="form-control" id="inputHz" value="10" min="1">
+            <small class="text-danger" id="errorHz" style="display: none;"></small>
 
+          </div>
+
+          <div class="col-md-2">
+            <label class="form-label">Hz Muestreo:</label>
+            <input type="number" class="form-control" id="inputHzMuestreo" value="100" min="1" max="1000">
+            <small class="text-danger" id="errorHzMuestreo" style="display: none;"></small>
+
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label">Segundos Ventana:</label>
+            <select class="form-select" id="inputSegundosVentana">
+              <option selected>--Selecciona--</option>
+              <option value="1">1 segundo</option>
+              <option value="2">2 segundos</option>
+              <option value="3">3 segundos</option>
+              <option value="4">4 segundos</option>
+              <option value="5">5 segundos</option>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-primary" id="btnIniciar">
+            
+             <i class="fas fa-play-circle"></i>
+              Iniciar / Actualizar
+          
+          
+          </button>
+          <button class="btn btn-danger" id="btnDetener">
+          
+              <i class="fas fa-play-circle"></i>
+               Detener
+          </button>
 
 
         </div>
 
       </div>
+
+
     
 
     <!-- FIN DEL DIV-->
