@@ -32,18 +32,18 @@
         <div class="card-header bg-danger text-white">Configuracion de Señal</div>
         
         <div class="card-body">
-            <!-- SOLO UNA FILA para todos los elementos -->
+
             <div class="row g-3 align-items-center">
                 
                 <!-- Amplitud -->
-                <div class="col-md-1">
+                <div class="col-md-2">
                     <label class="form-label">Amplitud:</label>
                     <input type="number" class="form-control" id="inputamplitud" value="10" min="1">
                     <small class="text-danger" id="errorAmplitud" style="display: none;"></small>
                 </div>
 
                 <!-- Hz -->
-                <div class="col-md-1">
+                <div class="col-md-2">
                     <label class="form-label">Hz:</label>
                     <input type="number" class="form-control" id="inputHz" value="10" min="1">
                     <small class="text-danger" id="errorHz" style="display: none;"></small>
@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- Segundos Ventana -->
-                <div class="col-md-2">  <!-- Reducido de 3 a 2 -->
+                <div class="col-md-2"> 
                     <label class="form-label">Segundos Ventana:</label>
                     <select class="form-select" id="inputSegundosVentana">
                         <option selected>--Selecciona--</option>
@@ -69,10 +69,10 @@
                     </select>
                 </div>
 
-                <!-- BOTONES - Ahora en la misma fila -->
-                <div class="col-md-4">  <!-- Columna para los botones -->
-                    <label class="form-label" style="opacity: 0;">Acciones:</label>  <!-- Label invisible para alineación -->
-                    <div class="d-flex gap-2">  <!-- Flex para poner botones en línea -->
+
+                <div class="col-md-4">
+                    <label class="form-label" style="opacity: 0;">Acciones:</label> 
+                    <div class="d-flex gap-2">
                         <button class="btn btn-success flex-fill" id="btnIniciar">
                             <i class="fas fa-play-circle me-1"></i>Iniciar
                         </button>
@@ -85,11 +85,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-    
 
     <!-- FIN DEL DIV-->
     </div>
