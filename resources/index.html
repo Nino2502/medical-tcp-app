@@ -13,30 +13,44 @@
 
     <div class="container py-4">
 
-      <h1 class="text-center text-info fw-bold mb-4">Monitoreo de Señales TCP/IP</h1>
+      <h1 class="text-center text-secondary fw-bold mb-4">Monitoreo de Señales TCP/IP</h1>
 
 
 
-      <div class="container py-4 mt-3 card border-danger">
+      <div class="card mb-4 bg-secondary" id="grafica_principal">
+        <div class="card-body text-white">
+          <h2 class="card-title">Señal Senoidal</h2>
+          <p class="card-text">Aquí se mostrará la gráfica principal de monitoreo.</p>
 
-        <h3>Soy segundo cuadro</h3>
-
-
-      </div>
-
-    
-      <div class="container py-4 mt-7 card border-warning">
-
-
-        <h3>Soy tercer cuadro</h3>
-
-        <button class="btn btn-primary" id="showNotificationBtn">Mostrar Notificación</button>
-        <button class="btn btn-secondary" id="showMessageBoxBtn">Mostrar Mensaje</button>
-        <button class="btn btn-success" id="showInfoBtn">Mostrar Información</button>
-
+        </div>
 
       </div>
+
+      <div class="card mb-1 border-dark">
+        <div class="card-header bg-danger text-white">Configuracion de Señal</div>
+
+
+        <div class="card-body row g-9 align-items-center">
+
+          <div class="col-md-1">
+            <label class="form-label">Amplitud:</label>
+            <input type="number" class="form-control" id="inputamplitud" value="10" min="1">
+            <small class="text-danger" id="errorAmplitud" style="display: none;"></small>
+          </div>
+
+          <div class="col-md-3 d-grid">
+              <button class="btn btn-success" onclick="iniciarMonitoreo()">Iniciar/Actualizar</button>
+          </div>
+          
+
+
+
+        </div>
+
+      </div>
     
+
+    <!-- FIN DEL DIV-->
     </div>
 
     
